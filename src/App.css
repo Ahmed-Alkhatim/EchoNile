@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 48px;
+    font-family: theBold;
+}
+ul {
+    padding: 0;
+}
+ul li  {
+    list-style: none;
+    list-style-position: outside;
+    margin-bottom: 16px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+

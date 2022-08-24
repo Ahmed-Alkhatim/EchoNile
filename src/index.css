@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+ font-family: theLight;
+}
+
+@font-face {
+  font-family: theBold;
+  src: url("./fonts/Roboto-Bold.ttf");
+
+}
+@font-face {
+  font-family: theRegular;
+  src: url("./fonts/Roboto-Regular.ttf");
+  
+}
+@font-face {
+  font-family: theLight;
+  src: url("./fonts/Roboto-Light.ttf");
+  
+}
