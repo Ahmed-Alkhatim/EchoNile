@@ -52,6 +52,46 @@
 
 /*
 ┌─────────────┐
+│ Vision Section ├────
+└─────────────┘
+ */
+.we {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.vision {
+    padding: 20px 10px 0px 40px;
+    width: 250px;
+    height: 210px;
+    border-left: 24px solid ;
+    border-bottom: 16px solid ;
+    border-radius: 8px;
+}
+.vision:nth-child(1){
+    border-color: #256F44;
+}
+.vision:nth-child(2){
+    border-color: #62A67D;
+}
+.vision:nth-child(3){
+    border-color: #65A94D;
+}
+.vision h6{
+    margin-bottom: 16px;
+    font-family: theRegular;
+    font-size: 32px;
+    color: #55625E;
+}
+.vision p {
+    color: #A5ACAA;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*
+┌─────────────┐
 │ Focus Section ├────
 └─────────────┘
  */
