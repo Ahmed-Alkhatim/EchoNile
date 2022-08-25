@@ -72,3 +72,27 @@
     color: #FCFCFC;
     font-size: 14px;
 }
+.date p {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/*
+┌─────────────┐
+│ Instructor Section ├────
+└─────────────┘
+*/
+
+.course .img-container {
+    height: 440px;
+    position: relative;
+}
+.course h2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.course  p {
+    color: #55625E;
+    line-height: 28px;  
+    margin-bottom: 20px;
+}

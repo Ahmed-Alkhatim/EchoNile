@@ -1,4 +1,3 @@
-import { Container } from "../components"
 import bransh from "../images/bransh-left.png"
 
 function FocusArea() {

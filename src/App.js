@@ -1,5 +1,5 @@
 import Home from './Home';
-import Service from './Sessions';
+import { Sessions, Courses, Course } from "./Services"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -11,7 +11,9 @@ function App() {
       <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="sessions" element={<Service />} />
+        <Route path="sessions" element={<Sessions />} />
+        <Route path="courses" element={<Courses />} />
+        <Route path="course" element={<Course />} />
       </Routes>
       </Router>
     </div>
