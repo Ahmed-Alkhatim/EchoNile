@@ -4,6 +4,7 @@ import Team from "./Team";
 import AboutInHome from "./About";
 import FocusArea from "./FocusArea";
 import Vision from "./Vision";
+import Instructor from "./Instructor"
 import { HomeData } from "./data";
 
 import "./home.css"
@@ -17,6 +18,7 @@ console.log(HomeData.members)
             <Vision />
             <FocusArea />
             <Team members = { HomeData.members } />
+            <Instructor />
             <Footer />
         </div>
     );
