@@ -56,6 +56,37 @@
 └─────────────┘
  */
 
+.focus h3 {
+    color: #2F3433;
+    font-size: 32px;
+    font-family: theBold;
+    position: relative;
+}
+.focus h3::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    display: block;
+    height: 3px;
+    background-color: #62A67D;
+    bottom: -10px;
+}
+.focus .boxes {
+    display: flex;
+}
+.focus .boxes div {
+    height: 89px;
+    color: #256F44;
+    box-shadow: 0px 3px 20px #132D1E4D;
+    border-radius: 8px;
+}
+
+/*
+┌─────────────┐
+│ Team Section ├────
+└─────────────┘
+ */
+
 .team {
     padding-top: 80px;
     padding-bottom: 80px;
