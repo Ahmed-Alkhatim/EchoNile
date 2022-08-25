@@ -3,7 +3,7 @@ const Intro = () => {
     return(
         <div className="intro">
             <Container>
-                <Header />
+                <Header theme = {"navigator-light"}/>
                 <h1>Together For an Environmentally Sustainable Future</h1>
             </Container>
         </div>

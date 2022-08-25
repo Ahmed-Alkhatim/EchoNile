@@ -1,17 +1,18 @@
-function Header() {
+import { Link } from "react-router-dom" 
+function Header( { theme }) {
     return ( 
         <div className = "header">
-            <div className="navigator">
-                <div><span className="logo-footer">Eco<span>Nile.</span></span></div>
+            <div className={"navigator " + theme}>
+                <div><span className={"logo-header"}>Eco<span>Nile.</span></span></div>
                 <div>
                 <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Services</li>
-                    <li>Our Team</li>
-                    <li>Blog</li>
-                    <li>Partnerships</li>
-                    <li>Contact us</li>
+                    <Link to = "/"><li>Home</li></Link>
+                    <Link to = "/"><li>About us</li></Link>
+                    <Link to = "/"><li>Services</li></Link>
+                    <Link to = "/"><li>Our Team</li></Link>
+                    <Link to = "/"><li>Blog</li></Link>
+                    <Link to = "/"><li>Partnerships</li></Link>
+                    <Link to = "/"><li>Contact us</li></Link>
                 </ul>
                 </div>
             </div>

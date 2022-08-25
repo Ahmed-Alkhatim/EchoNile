@@ -16,12 +16,23 @@
     justify-content: space-between;
     align-items: center;
 }
-.navigator .logo-footer {
+.navigator .logo-header {
     font-family: theBold;
+}
+.logo-header {
+    font-size: 24px !important;
 }
 .navigator ul li {
     display: inline-block;
     margin-right: 20px;
-    color: #ffffff;
     font-size: 16px;
+}
+.navigator-light {
+    color: #ffffff;
+}
+.navigator-dark {
+    color: #55625E;
+}
+.logo-header  span {
+    color: #256F44;
 }
