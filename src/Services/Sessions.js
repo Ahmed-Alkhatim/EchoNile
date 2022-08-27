@@ -11,9 +11,10 @@ const sessionsData = [
 function Sessions( ) {
     return ( 
         <>
+        <Header theme={"navigator-dark"}/>
         <div className="services page">
             <Container>
-            <Header theme={"navigator-dark"}/>
+                <h2 className="page-header blog-header">Sessions</h2>
                 <Service data = { sessionsData[0] } />
                 <OtherServices data = { sessionsData } />
             </Container>

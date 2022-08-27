@@ -2,7 +2,7 @@ import bransh from "../images/bransh.png"
 
 const AboutInHome = () => {
     return(
-        <div className="home-about">
+        <div id = "about" className="home-about">
             <div className="bransh-image">
                 <img src={bransh} alt="" />
             </div>

@@ -2,7 +2,7 @@
 .services {
     background-color: #FAFAFA;
 }
-.service {
+.main-card {
     margin-bottom: 80px;
     height: 440px;
     background: #FFFFFF;
@@ -10,31 +10,31 @@
     border-radius: 6px;
     display: flex;
 }
-.service-description h3{
+.card-description h3{
     font-family: theRegular;
     font-size: 28px;
 }
-.service-description p {
+.card-description p {
     color: #A5ACAA;
     line-height: 28px;
 }
-.service > div:nth-child(2) {
+.main-card > div:nth-child(2) {
     width : 30%;
     padding: 30px 60px;
 }
-.service .img-container {
+.main-card .img-container {
     width : 60%;
     position: relative;
 
 }
 
-.service-description {
+.card-description {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.service-card {
+.card {
     margin-bottom: 40px;
     width: 45%;
     box-shadow: 0px 5px 15px #00000014;
@@ -42,14 +42,14 @@
     border-radius: 6px;
 
 }
-.service-card .img-container{
+.card .img-container{
     height: 319px;
     position: relative;
 }
-.service-card .service-description {
+.card .card-description {
     padding: 25px 16px;
 }
-.service img,  .service-card img{
+.main-card img,  .card img{
     border-radius: 6px;
 }
 .date {
@@ -75,6 +75,8 @@
 .date p {
     padding: 0 !important;
     margin: 0 !important;
+    line-height: 20px !important;
+
 }
 
 /*
@@ -82,17 +84,6 @@
 │ Instructor Section ├────
 └─────────────┘
 */
-
-.course .img-container {
-    height: 440px;
+.course-img-container {
     position: relative;
-}
-.course h2 {
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-.course  p {
-    color: #55625E;
-    line-height: 28px;  
-    margin-bottom: 20px;
 }

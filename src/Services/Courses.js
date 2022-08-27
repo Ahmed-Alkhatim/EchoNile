@@ -15,9 +15,9 @@ function Courses( ) {
 
     return ( 
         <>
+        <Header theme={"navigator-dark"}/>
         <div className="services page">
             <Container>
-            <Header theme={"navigator-dark"}/>
                 <Service data = { sessionsData[0] } date = {<Date date = "Monday, June 27, 2022" time = "1:24 AM -GTM" />}  button = {<More linkedTo = "/course" pad={2}/>} />
                 <OtherServices data = { sessionsData } contain = {true} />
             </Container>
@@ -29,11 +29,12 @@ function Courses( ) {
 
 const Course = () => {
     return(
-        <di className = "course ">
+        <>
+        <Header theme={"navigator-dark"}/>
+        <div className = "view page">
             <Container>
-            <Header theme={"navigator-dark"}/>
 
-            <div className="img-container page">
+            <div className="img-container course-img-container">
                 <img src={ image } alt="course" />
                 <Date date = "Monday, June 27, 2022" time = "1:24 AM -GTM" />
             </div>
@@ -46,9 +47,9 @@ const Course = () => {
                 <p>This IELTS preparation & English vocabulary course will teach you the knowledge and help build your confidence to achieve the high band score you need! The Vocabulary… In total, you will learn a mixture of over 120 words, phrases and collocations related to the topic: The Environment tht will help you achieve a high band score on the IELTS test. Why the Environment? The Environment is a hot topic and features in many English courses and exams! According to various sources, the topic: The Environment has a 10-15% chance of appearing in the IELTS exam. </p>
             </div>
             </Container>
-            <Footer />
-
-        </di>
+        </div>
+        <Footer />
+        </>
     )
 }
 

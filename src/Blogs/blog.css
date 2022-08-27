@@ -1,0 +1,58 @@
+.writer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.writer > div {
+    display: inline-block;
+    line-height: 24px;
+}
+
+
+.writer .img-container {
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.main-card .writer .img-container{
+    width : 48px;
+    height: 48px;
+}
+
+.card .writer .img-container{ 
+    width : 32px;
+    height: 32px;
+}
+.writer-det {
+    position: relative;
+}
+.writer h3 {
+    position: absolute;
+    width: 200px;
+}
+.writer p {
+    position: absolute;
+    width: 200px;
+}
+.main-card .writer h3 {
+    top: -42px;
+    font-size: 14px;
+}
+.main-card .writer p {
+    top: -24px;
+    font-size: 12px;
+}
+.card .writer h3 {
+    top: -32px;
+    font-size: 12px;
+
+}
+.card  .writer p {
+    font-size: 10px;
+    top: -18px;
+}
+.blog-date {
+    color: #A5ACAA;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: theLighter;
+}

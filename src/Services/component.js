@@ -6,12 +6,12 @@ import image from  "../images/shop.jpg";
 import "./service.css"
 
 const Service = ({ data, date, button }) => (
-    <div className="service">
+    <div className="main-card">
         <div className="img-container">
             <img src={ image } alt="" />
             { date }
         </div>
-        <div className = "service-description">
+        <div className = "card-description">
             <div>
                 <h3 className="head-marg">{ data.title }</h3>
                 <p>{ data.discription }</p>
@@ -22,12 +22,12 @@ const Service = ({ data, date, button }) => (
 )
 const OtherService = ({ session , date, button }) => {
     return(
-        <div className="service-card">
+        <div className="card">
             <div className="img-container">
                 <img src={ image } alt="" />
                 { date }
             </div>
-            <div className = "service-description">
+            <div className = "card-description">
                 <div>
                     <h3 className="head-marg">{ session.title }</h3>
                     <p>{ session.discription }</p>

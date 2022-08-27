@@ -5,7 +5,7 @@ function FocusArea() {
         <div className="focus">
                 <img className="bransh-focus" src={bransh} alt="" />
                 <div>
-                    <h3>Our Focus areas</h3>
+                    <h3 className="page-header ">Our Focus areas</h3>
                     <div className="boxes">
                 
                         <div><h6>Land</h6></div>
