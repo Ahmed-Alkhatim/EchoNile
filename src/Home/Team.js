@@ -21,7 +21,7 @@ const ListOfMembers = ( { member } ) => {
             </div>
             <h6>{ member.name } </h6>
             <p>{ member.position } </p>
-            <img src={ linkidIn }  alt="linkedin" />
+            <img className="linkedin" src={ linkidIn }  alt="linkedin" />
         </div>
     )
 }

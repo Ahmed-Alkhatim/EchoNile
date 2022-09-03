@@ -1,19 +1,15 @@
 .footer {
-    /* Layout Properties */
     padding-top: 56px;
     padding-bottom: 28px;
-    /* UI Properties */
     background-color: #B4D7BD;
     color: #657A75;
     font-size: 14px;
 }
-/* .flex-footer {
-    display: flex;
-    justify-content: space-around;
-} */
+
 .flex-footer > div {
     max-width: 376px;
 }
+
 .footer h6{
     color: #55625E;
     font-size: 16px;
@@ -31,4 +27,41 @@
 
 .header-footer p {
     line-height: 22px;
+}
+
+@media screen and (max-width : 1192px){
+    .flex-footer > div {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width : 991px){
+    .flex-footer > div {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width : 768px){
+    .header-footer {
+       width : 100% !important;
+       max-width: 300px;
+    }
+}
+
+@media screen and (max-width : 600px){
+    .footer {
+        font-size: 12px;
+    }
+    .footer h6{ 
+        font-size: 14px;
+        
+    }
+    .flex-footer > div {
+        max-width: 100%;
+    }
+    .header-footer p {
+        font-size: 12px;
+    }
+    .foo p {
+        font-size: 12px;
+    }
 }

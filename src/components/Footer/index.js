@@ -11,7 +11,7 @@ function Footer() {
                     <Services />
                     <Contact />
                 </div>
-                <div><p style={{ textAlign : "center" }}>© Copyright 2002-2022 EcoNile. All Rights Reserved.</p></div>
+                <div className="foo"><p style={{ textAlign : "center" }}>© Copyright 2002-2022 EcoNile. All Rights Reserved.</p></div>
             </Container>
         </div>
     );

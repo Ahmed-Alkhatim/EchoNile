@@ -88,3 +88,38 @@ ul li  {
 .view-details {
     width: 90%;
 }
+@media screen and (max-width : 991px){
+    p {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .page-header {
+        margin-bottom: 50px;
+        font-size: 28px;
+    }
+}
+@media screen and (max-width : 768px){
+    p {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .page-header {
+        margin-bottom: 60px;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width : 600px){
+    .page-header {
+        margin-bottom: 40px;
+    }
+    p {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+}

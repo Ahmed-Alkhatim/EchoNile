@@ -50,6 +50,76 @@
     left: -1470px;
 }
 
+@media screen and (max-width : 1191px){
+    
+}
+@media screen and (max-width : 991px){
+    .home-about {
+    padding-top: 80px;
+
+    }
+    .home-about-text{
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 10px;
+        width: 600px;
+    }
+    .home-about-text h2 {
+        margin-bottom: 16px;
+        font-size: 28px;
+    }
+    .home-about-text p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width : 768px){
+    .home-about {
+        padding-top: 30px;
+    
+        }
+    .home-about {
+        height: auto;
+    }
+    .home-about .bransh-image {
+        display: none;
+    }
+    .home-about-text{
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 10px;
+        width: 80%;
+    }
+    .home-about-text h2 {
+        margin-bottom: 16px;
+        font-size: 28px;
+    }
+    .home-about-text p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+@media screen and (max-width : 500px){
+    .home-about {
+        padding-top: 15px;
+    
+        }
+    .home-about-text{
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 10px;
+        width: 90%;
+    }
+    .home-about-text h2 {
+        margin-bottom: 14px;
+        font-size: 28px;
+    }
+    .home-about-text p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
 /*
 ┌─────────────┐
 │ Vision Section ├────
@@ -60,6 +130,7 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 .vision {
     padding: 20px 10px 0px 40px;
@@ -88,32 +159,78 @@
     color: #A5ACAA;
     line-height: 24px;
 }
-
+@media screen and (max-width : 1199px){
+    .vision {
+        padding: 20px 10px 0px 40px;
+        width: 200px;
+        height: 200px;
+        border-left: 22px solid ;
+        border-bottom: 14px solid ;
+        border-radius: 8px;
+    }
+}
+@media screen and (max-width : 991px){
+    .we {
+        justify-content: space-around;
+    }
+    .vision {
+        padding: 15px 10px 0px 30px;
+        width: 180px;
+        height: 200px;
+        border-left: 18px solid ;
+        border-bottom: 10px solid ;
+        border-radius: 6px;
+        margin-bottom: 50px;
+    }
+    .vision h6{
+        margin-bottom: 12px;
+        font-size: 28px;
+    }
+       
+}
+@media screen and (max-width : 600px){
+    .we {
+        padding-bottom: 0px;
+    }
+    .vision {
+        padding: 10px 5px 10px 15px;
+        width: 80%;
+        height: auto;
+        border-left: 18px solid ;
+        border-bottom: 10px solid ;
+        border-radius: 6px;
+        margin-bottom: 50px;
+        
+    }
+    .vision p {
+        font-size: 14px;
+    }
+    .vision h6{
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+}
 /*
 ┌─────────────┐
 │ Focus Section ├────
 └─────────────┘
  */
- .focus  {
+.focus  {
     padding-top: 150px;
     padding-left: 104px;
-    /* padding-bottom: 50px; */
     position: relative;
     overflow: hidden;
-    /* display: flex; */
-    /* align-items:flex-end; */
     height: 300px;
- }
- .bransh-focus {
+}
+.bransh-focus {
     position: absolute;
     top: -300px;
     right: -1385px;
- }
+}
 
 .focus .boxes {
     display: flex;
     position: relative;
-    /* justify-content: space-between; */
 }
 .focus .boxes div {
     height: 89px;
@@ -133,6 +250,68 @@
     align-items: center
 
 }
+@media screen and (max-width : 1191px){
+    .focus .boxes div {
+        height: 70px;
+        margin-right: 60px;
+        max-width: 100px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width : 991px){
+    .focus  {
+        padding-top: 140px;
+        padding-left: 80px;
+    }
+    .focus .boxes div {
+        height: 60px;
+        margin-right: 40px;
+        max-width: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 18px;
+        justify-content:first baseline;
+    }
+}
+@media screen and (max-width : 768px){
+    .focus  {
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    .focus .boxes {
+        flex-wrap: wrap;
+    }
+    .focus .boxes div {
+        height: 40px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        max-width: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 18px;
+        justify-content:first baseline;
+    }
+}
+@media screen and (max-width : 600px) {
+    .focus {
+    height: 220px;
+
+    }
+    .bransh-focus {
+        display: none;
+    }
+}
+@media screen and (max-width : 340px) {
+    .focus {
+        height: auto;
+
+    }
+    .bransh-focus {
+        display: none;
+    }
+}
 
 /*
 ┌─────────────┐
@@ -147,6 +326,7 @@
     background-color: #F0F7F2;
     text-align: center;
 }
+
 .team h2 {
     color: #55625E;
     margin-bottom: 150px;
@@ -205,6 +385,59 @@
     width: 100%;
     height: 100%;
 }
+@media screen and (max-width : 1251px){
+    .team .member {
+        width: 300px;
+    }
+    
+}
+@media screen and (max-width : 1191px){
+    .team .member {
+        width: 270px;
+    }
+    .team .member h6  {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .team p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width : 1028px){
+    .team .member {
+        width: 260px;
+    }
+}
+@media screen and (max-width : 991px){
+    .team .member {
+        width: 280px;
+        margin-bottom: 130px;
+    }
+    .team .flex-between {
+        justify-content: space-around;
+    }
+    .team .member:last-child {
+        margin-bottom: 30px;
+    }
+
+}
+@media screen and (max-width : 600px){
+    .team .member {
+        padding-top: 75px;
+        padding-bottom: 30px;
+        height: 200px;
+    }
+    .team .member:last-child {
+        margin-bottom: 20px;
+    }
+    .team .member .member-image {
+        top: -55px;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+    }
+}
 /*
 ┌─────────────┐
 │ Instructor Section ├────
@@ -233,4 +466,37 @@
     position: absolute;
     width: 100%;
     height: 100%;
+}
+@media screen and (max-width : 991px){
+    .instructor {
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .instructor h3 {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width : 768px){
+    .instructor {
+        height: 170px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .instructor h3 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width : 768px){
+    .instructor {
+        height: 150px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .instructor h3 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
