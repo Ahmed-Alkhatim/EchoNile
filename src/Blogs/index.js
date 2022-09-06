@@ -29,9 +29,9 @@ const Blogs = () => {
 const BlogView = () => {
     return(
         <>
-        <Header theme={"navigator-dark"}/>
         <div className = "view page" >
             <Container>
+            <Header theme={"navigator-dark"}/>
                 <div className="img-container ">
                     <img src={ image } alt="course" />
                 </div>

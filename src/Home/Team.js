@@ -2,7 +2,7 @@ import { Container } from "../components"
 import linkidIn from "../images/icons/linkedin-member.png"
 const Team = ({ members }) => {
     return(
-        <div className="team">
+        <div id = "team" className="team">
             <Container>
                 <h2>Meet Our Team</h2>
                 <div className="flex-between">

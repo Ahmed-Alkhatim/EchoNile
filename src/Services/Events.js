@@ -11,7 +11,7 @@ const sessionsData = [
     {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
 ]
 
-function Courses( ) {
+function Events( ) {
 
     return ( 
         <>
@@ -27,7 +27,7 @@ function Courses( ) {
      );
 }
 
-const Course = () => {
+const Event = () => {
     return(
         <>
         <div className = "view page">
@@ -54,4 +54,4 @@ const Course = () => {
     )
 }
 
-export { Courses, Course }
+export { Events, Event }

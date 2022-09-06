@@ -9,12 +9,53 @@
 }
 .intro h1 {
     color: #FFFFFF;
-    font-size: 64px;
-    font-family: theBold;
+    font-size: 48px;
+    font-family: theRegular;
     position: absolute;
     bottom: 164px;
 }
-
+.intro h1 span {
+    display : block;
+    color: #256F44;
+    font-size: 40px;
+}
+.intro-contact{
+    width: 80%;
+    position: absolute;
+    bottom: 50px;
+    color: #256F44;
+    font-size: 22px;
+    font-family: theRegular;
+    display: flex;
+    justify-content: space-between;
+}
+.introContact-header a{
+    text-decoration: none;
+    font-family: theBold;
+    position: relative;
+}
+.introContact-header a::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #256F44;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.intro-contact img {
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #256F44;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+.intro-contact img:hover {
+    background-color: #65A94D;
+    border:1px solid #65A94D;
+}
 /*
 ┌─────────────┐
 │ About Section├────
@@ -452,6 +493,7 @@
     position : relative;
 }
 .instructor h3 {
+    z-index: 8;
     padding: 10px 30px;
     position: absolute;
     background-color: #65A94D;
@@ -499,4 +541,64 @@
         padding: 10px 20px;
         font-size: 14px;
     }
+}
+
+
+/*
+┌─────────────┐
+│ Contact Section ├────
+└─────────────┘
+*/
+.home-contact {
+    color: #F0F7F2;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-contact > div{
+    width: 50%;
+}
+.home-contact .form {
+    width: 80%;
+}
+.home-contact .form button{
+    background-color: #256F44;
+    border: #256F44;
+    color: #FFFFFF;
+    border-radius: 6px;
+    height: 45px;
+    width: 100%;
+    cursor: pointer;
+}
+.mask-contact {
+    background-color: #256F44;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.img-and-icons {
+    position: absolute;
+    height: 331px;
+    bottom: 77px;
+    left: 140px;
+}
+.img-and-icons img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.img-and-icons p {
+    margin: 30px;
+}
+.img-and-icons .links {
+    position: absolute;
+    bottom: 0;
+    margin: 35px;
+}
+.contact-masker {
+    position: absolute;
+    bottom: -5px;
+    z-index: 3;
 }

@@ -6,7 +6,7 @@ import FocusArea from "./FocusArea";
 import Vision from "./Vision";
 import Instructor from "./Instructor"
 import { HomeData } from "./data";
-
+import Contact  from "./Contact";
 import "./home.css"
 function Home() {
 console.log(HomeData.members)
@@ -19,6 +19,7 @@ console.log(HomeData.members)
             <FocusArea />
             <Team members = { HomeData.members } />
             <Instructor />
+            <Contact />
             <Footer />
         </div>
     );

@@ -5,10 +5,11 @@ import instructor_mask from "../images/instructor-mask.png"
 const Instructor = () => {
     return(
         <>
-        <Header theme = {"navigator-dark"}/>
         <div className="instruction page">
             <div className = " instruction-masker "><img src = {instructor_mask} alt = "mask"/></div>
             <Container>
+        <Header theme = {"navigator-dark"}/>
+
             <h2 className="page-header instructor-header">Become an Instructor</h2>
 
                 <div className = "form">

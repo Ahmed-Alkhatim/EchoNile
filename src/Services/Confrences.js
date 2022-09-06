@@ -11,13 +11,14 @@ const sessionsData = [
     {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
 ]
 
-function Courses( ) {
+function Conferences( ) {
 
     return ( 
         <>
         <div className="services page">
             <Container>
                 <Header theme={"navigator-dark"}/>
+                <h2 className="page-header blog-header">Conferences</h2>
                 <Service data = { sessionsData[0] } date = {<Date date = "Monday, June 27, 2022" time = "1:24 AM -GTM" />}  button = {<More linkedTo = "/course" pad={2}/>} />
                 <OtherServices data = { sessionsData } contain = {true} />
             </Container>
@@ -27,7 +28,7 @@ function Courses( ) {
      );
 }
 
-const Course = () => {
+const Conference = () => {
     return(
         <>
         <div className = "view page">
@@ -54,4 +55,4 @@ const Course = () => {
     )
 }
 
-export { Courses, Course }
+export { Conferences, Conference }
