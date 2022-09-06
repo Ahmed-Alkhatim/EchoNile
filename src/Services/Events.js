@@ -18,6 +18,7 @@ function Events( ) {
         <div className="services page">
             <Container>
                 <Header theme={"navigator-dark"}/>
+                <h2 className="page-header blog-header">Events</h2>
                 <Service data = { sessionsData[0] } date = {<Date date = "Monday, June 27, 2022" time = "1:24 AM -GTM" />}  button = {<More linkedTo = "/course" pad={2}/>} />
                 <OtherServices data = { sessionsData } contain = {true} />
             </Container>

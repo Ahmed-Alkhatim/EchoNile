@@ -14,9 +14,9 @@ const blogssData = [
 const Blogs = () => {
     return(
         <>
-        <Header />
         <div className="blogs page">
             <Container>
+            <Header theme={"navigator-dark"}/>
             <h2 className="page-header blog-header">Blog</h2>
             <Blog data = { blogssData[0] } />
             <OtherBlogs data = { blogssData } />
