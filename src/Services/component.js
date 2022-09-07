@@ -74,4 +74,49 @@ const Date = ({ date, time}) => {
 
 const More = ({ linkedTo, pad }) => ( <Link to = {linkedTo} ><p style={{ color : "#65A94D" , fontFamily : "theRegular", paddingRight : "10px", paddingTop : (16 * pad + "px"), paddingBottom : (16 * pad + "px")  }}>View details <img src={ arrow } alt="arrow" /></p></Link>)
 
-export { Service, OtherService, OtherServices, Date, More  }
+const Session = ({ data }) => (
+    <div className="main-card">
+        <div className="img-container">
+        <iframe width="56z" height="315" src={data.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div className = "card-description">
+            <div>
+                <h3 className="head-marg">{ data.title }</h3>
+                <p>{ data.discription }</p>
+            </div>
+        </div>
+    </div>
+)
+const OtherSession = ({ session }) => {
+    return(
+        <div className="card">
+            <div className="img-container">
+            <iframe width="56z" height="315" src={session.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div className = "card-description">
+                <div>
+                    <h3 className="head-marg">{ session.title }</h3>
+                    <p>{ session.discription }</p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const OtherSessions = ({ data }) => {
+    const servicesList = data.map( (session, index) => {
+
+        return (
+        <React.Fragment key = { index }>
+            <OtherSession session = { session }  />
+        </React.Fragment>
+        )})
+    return(
+        <div className="flex-between">
+            { servicesList }
+        </div>
+    )
+}
+
+
+export { Service, OtherService, OtherServices, Date, More, Session, OtherSession, OtherSessions  }

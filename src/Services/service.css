@@ -20,11 +20,16 @@
 }
 .main-card > div:nth-child(2) {
     width : 30%;
-    padding: 30px 60px;
+    padding: 30px 50px;
 }
 .main-card .img-container {
     width : 60%;
     position: relative;
+
+}
+.main-card .img-container iframe{
+    width : 100%;
+    height: 100%;
 
 }
 
@@ -45,6 +50,10 @@
 .card .img-container{
     height: 319px;
     position: relative;
+}
+.card .img-container iframe{
+  width: 100%;
+  height: 1005;
 }
 .card .card-description {
     padding: 25px 16px;
