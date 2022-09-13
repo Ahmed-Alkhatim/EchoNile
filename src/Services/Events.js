@@ -4,11 +4,14 @@ import { Service, OtherServices, Date, More  } from "./component";
 import "./service.css"
 import image from  "../images/shop.jpg";
 
+import event from "../images/event.jpg"
+import event1 from "../images/event1.jpg"
+import event2 from "../images/event2.jpg"
 const sessionsData = [
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : event},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : event1},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : event2},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : event1},
 ]
 
 function Events( ) {
@@ -16,8 +19,8 @@ function Events( ) {
     return ( 
         <>
         <div className="services page">
+            <Header theme={"navigator-dark"}/>
             <Container>
-                <Header theme={"navigator-dark"}/>
                 <h2 className="page-header blog-header">Events</h2>
                 <Service data = { sessionsData[0] } date = {<Date date = "Monday, June 27, 2022" time = "1:24 AM -GTM" />}  button = {<More linkedTo = "/course" pad={2}/>} />
                 <OtherServices data = { sessionsData } contain = {true} />

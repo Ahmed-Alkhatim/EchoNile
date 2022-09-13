@@ -8,16 +8,19 @@
 }
 
 
+
 .writer .img-container {
     margin-right: 10px;
     border-radius: 50%;
     overflow: hidden;
 }
-.main-card .writer .img-container{
+.main-card .writer .img-container, .view .writer .img-container{
     width : 48px;
     height: 48px;
 }
-
+.view .writer .img-container {
+    margin: 0 10px ;
+}
 .card .writer .img-container{ 
     width : 32px;
     height: 32px;
@@ -33,11 +36,11 @@
     position: absolute;
     width: 200px;
 }
-.main-card .writer h3 {
+.main-card .writer h3 , .view .writer h3{
     top: -42px;
     font-size: 14px;
 }
-.main-card .writer p {
+.main-card .writer p , .view .writer p{
     top: -24px;
     font-size: 12px;
 }
@@ -55,4 +58,42 @@
     font-size: 12px;
     margin-bottom: 10px;
     font-family: theLighter;
+}
+.view-details h4 {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+.view-details h4::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(98, 166, 125, .5);
+    z-index: 1;
+}
+@media screen and (max-width : 768px){
+    .main-card .writer .img-container{ 
+        width : 32px;
+        height: 32px;
+    }
+    .main-card .writer h3 {
+        top: -32px;
+        font-size: 12px;
+    }
+    .main-card .writer p {
+        font-size: 10px;
+        top: -18px;
+    }
+    .view-details h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .view-details h4::after {
+        height:8px;
+    }
 }

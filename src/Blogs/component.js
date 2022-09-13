@@ -8,7 +8,7 @@ const Blog = ({ data }) => (
         </div>
         <div className = "card-description">
             <div>
-                <h6 className="blog-date">27 May 2020</h6>
+                <h6 className="blog-date">{data.date}</h6>
                 <h3 className="head-marg">{ data.title }</h3>
                 <p>{ data.discription }</p>
                <div className="writer">

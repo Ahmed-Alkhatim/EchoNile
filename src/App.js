@@ -22,7 +22,7 @@ function App() {
         <Route path="conferences" element={<Conferences />} />
         <Route path="conference" element={<Conference />} />
         <Route path="blogs" element={<Blogs />} />
-        <Route path="blog" element={<BlogView />} />
+        <Route path="blog/:id" element={<BlogView />} />
         <Route path="events" element={<Events />} />
         <Route path="event" element={<Event />} />
         <Route path="workshops" element={<Workshops />} />

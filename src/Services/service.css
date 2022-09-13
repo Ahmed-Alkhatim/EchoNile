@@ -12,7 +12,7 @@
 }
 .card-description h3{
     font-family: theRegular;
-    font-size: 28px;
+    font-size: 26px;
 }
 .card-description p {
     color: #A5ACAA;
@@ -25,12 +25,10 @@
 .main-card .img-container {
     width : 60%;
     position: relative;
-
 }
 .main-card .img-container iframe{
     width : 100%;
     height: 100%;
-
 }
 
 .card-description {
@@ -41,11 +39,10 @@
 
 .card {
     margin-bottom: 40px;
-    width: 45%;
+    width: 480px;
     box-shadow: 0px 5px 15px #00000014;
     /* height: 528px; */
     border-radius: 6px;
-
 }
 .card .img-container{
     height: 319px;
@@ -95,4 +92,95 @@
 */
 .course-img-container {
     position: relative;
+}
+
+@media screen and (max-width : 1192px){
+    .card {
+        width: 430px;
+    }
+}
+@media screen and (max-width : 1100px){
+    .card {
+        width: 400px;
+    }
+}
+@media screen and (max-width : 991px){
+    .main-card {
+        margin-bottom: 80px;
+        height: 380px;
+        border-radius: 6px;
+    }
+    .main-card .img-container {
+        width : 50%;
+        position: relative;
+    }
+    .card-description h3{
+        font-size: 20px;
+    }
+    .card-description p {
+        line-height: 24px;
+    }
+    .card .img-container{
+        height: 250px;
+        position: relative;
+    }
+    .card {
+        width: 380px;
+    }
+    .date > div p:first-child {
+        font-size: 10px;
+    }
+    .date > div p:last-child {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 928px){
+    .card {
+        width: 450px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width : 928px){
+    .main-card {
+        height: 320px;
+    }
+    .main-card > div:nth-child(2) {
+        width : 40%;
+        padding: 20px 35px;
+    }
+}
+@media screen and (max-width : 768px){
+    .main-card {
+        flex-wrap: wrap;
+        width: 450px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .main-card > div:nth-child(2) {
+        width : 100%;
+    }
+    .main-card .img-container {
+        width : 100%;
+    }
+    .date > div p:first-child {
+        font-size: 8px;
+    }
+    .date > div p:last-child {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width : 550px){
+    .card, .main-card {
+        width: 350px;
+    }
+    .main-card > div:nth-child(2) {
+        padding: 15px 10px;
+    }
+}
+@media screen and (max-width : 400px){
+    .card, .main-card {
+        width: 320px;
+    }
 }

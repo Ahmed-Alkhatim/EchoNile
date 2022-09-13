@@ -11,7 +11,10 @@ import mask from "../images/contact-mask.png"
 const Contact = () => {
     return(
         <Container>
+        <h3 className="page-header ">Contact Us</h3>
+
         <div id = "contact" className="home-contact">
+
             <div className="home-form">
                 <div className = "form">
                         <div className = "form-input">

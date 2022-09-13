@@ -99,6 +99,9 @@ ul li  {
         margin-bottom: 50px;
         font-size: 28px;
     }
+    .head-marg {
+        margin-bottom: 12px;
+    }
 }
 @media screen and (max-width : 768px){
     p {
@@ -107,9 +110,16 @@ ul li  {
     h2 {
         font-size: 32px;
     }
+    .page h2{
+        width: 100%;
+    }
     .page-header {
+        margin: auto;
         margin-bottom: 60px;
         font-size: 24px;
+    }
+    .page-header::after {
+        left: calc(50% - 40px);
     }
 }
 @media screen and (max-width : 600px){
@@ -117,9 +127,14 @@ ul li  {
         margin-bottom: 40px;
     }
     p {
-        font-size: 28px;
+        font-size: 12px;
     }
     h2 {
-        font-size: 24px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width : 660px) {
+    .page-header::after {
+       display: none;
     }
 }

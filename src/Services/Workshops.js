@@ -4,20 +4,23 @@ import { Service, OtherServices, Date, More  } from "./component";
 import "./service.css"
 import image from  "../images/shop.jpg";
 
+import workshop from "../images/workshop.jpg"
+import workshop1 from "../images/workshop1.jpg"
+import workshop2 from "../images/workshop2.jpg"
 const sessionsData = [
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : workshop},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : workshop1},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : workshop2},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : workshop1},
 ]
 
 function Workshops( ) {
 
     return ( 
         <>
+        <Header theme={"navigator-dark"}/>
         <div className="services page">
             <Container>
-                <Header theme={"navigator-dark"}/>
                 <h2 className="page-header blog-header">Workshops</h2>
                 <Service data = { sessionsData[0] } date = {<Date date = "Monday, June 27, 2022" time = "1:24 AM -GTM" />}  button = {<More linkedTo = "/course" pad={2}/>} />
                 <OtherServices data = { sessionsData } contain = {true} />

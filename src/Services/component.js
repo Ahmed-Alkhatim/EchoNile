@@ -1,14 +1,12 @@
 import React from "react";
 import arrow from "../images/arrow.svg"
 import { Link } from "react-router-dom";
-
-import image from  "../images/shop.jpg";
 import "./service.css"
 
 const Service = ({ data, date, button }) => (
     <div className="main-card">
         <div className="img-container">
-            <img src={ image } alt="" />
+            <img src={ data.src } alt="" />
             { date }
         </div>
         <div className = "card-description">
@@ -24,7 +22,7 @@ const OtherService = ({ session , date, button }) => {
     return(
         <div className="card">
             <div className="img-container">
-                <img src={ image } alt="" />
+                <img src={  session.src } alt="" />
                 { date }
             </div>
             <div className = "card-description">
@@ -77,16 +75,20 @@ const More = ({ linkedTo, pad }) => ( <Link to = {linkedTo} ><p style={{ color :
 const Session = ({ data }) => (
     <div className="main-card">
         <div className="img-container">
-        <iframe width="56z" height="315" src={data.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="56z" height="315" src={data.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
         </div>
         <div className = "card-description">
             <div>
-                <h3 className="head-marg">{ data.title }</h3>
+                <h3 className="head-marg">
+                    { data.title }
+                    <h6 style={{ display : "block", fontSize : "16px", paddingTop : "8px"}}>{data.by}</h6>
+                </h3>
                 <p>{ data.discription }</p>
             </div>
         </div>
     </div>
 )
+
 const OtherSession = ({ session }) => {
     return(
         <div className="card">
@@ -95,7 +97,11 @@ const OtherSession = ({ session }) => {
             </div>
             <div className = "card-description">
                 <div>
-                    <h3 className="head-marg">{ session.title }</h3>
+                    <h3 className="head-marg">
+                        { session.title }
+                        <h6 style={{ display : "block", fontSize : "16px", paddingTop : "8px"}}>{session.by}</h6>
+                    </h3>
+                    
                     <p>{ session.discription }</p>
                 </div>
             </div>

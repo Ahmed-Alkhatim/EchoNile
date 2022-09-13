@@ -1,14 +1,15 @@
 import { Container, Header, Footer } from "../components";
 import { Service, OtherServices, Date, More  } from "./component";
-
+import confrence from "../images/confrence.jpg"
+import confrence1 from "../images/confrence1.jpg"
 import "./service.css"
 import image from  "../images/shop.jpg";
 
 const sessionsData = [
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
-    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et"},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : confrence},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : confrence1},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : confrence},
+    {title : "Lorem ipsum dolor sit amet, consetetur", discription : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et", src : confrence1},
 ]
 
 function Conferences( ) {
@@ -16,8 +17,8 @@ function Conferences( ) {
     return ( 
         <>
         <div className="services page">
+            <Header theme={"navigator-dark"}/>
             <Container>
-                <Header theme={"navigator-dark"}/>
                 <h2 className="page-header blog-header">Conferences</h2>
                 <Service data = { sessionsData[0] } date = {<Date date = "Monday, June 27, 2022" time = "1:24 AM -GTM" />}  button = {<More linkedTo = "/course" pad={2}/>} />
                 <OtherServices data = { sessionsData } contain = {true} />
@@ -37,7 +38,7 @@ const Conference = () => {
             <Header theme={"navigator-dark"}/>
 
             <div className="img-container course-img-container">
-                <img src={ image } alt="course" />
+                <img src={ confrence } alt="course" />
                 <Date date = "Monday, June 27, 2022" time = "1:24 AM -GTM" />
             </div>
             <div>

@@ -7,6 +7,7 @@
     background-size: cover;
     position: relative;
 }
+
 .intro h1 {
     color: #FFFFFF;
     font-size: 48px;
@@ -55,6 +56,31 @@
 .intro-contact img:hover {
     background-color: #65A94D;
     border:1px solid #65A94D;
+}
+@media screen and (max-width : 600px){
+    .intro {
+        height: 500px;
+    }
+
+    .intro h1 {
+        font-size: 24px;
+        bottom: 144px;
+    }
+    .intro h1 span {
+        font-size: 20px;
+    }
+    .intro-contact{
+        width: 90%;
+        bottom: 50px;
+        font-size: 12px;
+    }
+    .intro-contact img {
+        margin: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 3px;
+        padding: 4px;
+    }
 }
 /*
 ┌─────────────┐
@@ -148,7 +174,7 @@
         }
     .home-about-text{
         padding-top: 20px;
-        padding-left: 30px;
+        padding-left: 45px;
         padding-right: 10px;
         width: 90%;
     }
@@ -274,6 +300,7 @@
     position: relative;
 }
 .focus .boxes div {
+    position: relative;
     height: 89px;
     margin-right: 60px;
     max-width: 100px;
@@ -289,7 +316,12 @@
     display: flex;
     justify-content: center;
     align-items: center
-
+}
+.focus .boxes img {
+    position: absolute;
+    left: 100%;
+    top: 35%;
+    width: 35px;
 }
 @media screen and (max-width : 1191px){
     .focus .boxes div {
@@ -341,6 +373,9 @@
 
     }
     .bransh-focus {
+        display: none;
+    }
+    .focus .boxes img {
         display: none;
     }
 }
@@ -478,6 +513,9 @@
         width: 100px;
         height: 100px;
     }
+    .team h2 {
+        margin-bottom: 100px;
+    }
 }
 /*
 ┌─────────────┐
@@ -601,4 +639,15 @@
     position: absolute;
     bottom: -5px;
     z-index: 3;
+}
+@media screen and (max-width : 600px){
+    .mask-contact {
+        display: none;
+    }
+    .home-contact > div{
+        width: 100%;
+    }
+    .home-contact .form {
+        width: 100%;
+    }
 }

@@ -2,14 +2,11 @@
     position: relative;
     padding-top: 250px;
     padding-bottom: 250px;
-    /* overflow: hidden; */
 }
 .instruction-masker {
     position: absolute;
     bottom : 0px;
-    /* width: 100vw; */
     right: 0;
-    /* height: 800px; */
 }
 
 .instruction .form {
@@ -68,4 +65,10 @@
 }
 .groubed-inputs input{
     width: 45%;
+}
+@media screen and (max-width : 600px){
+    .instruction .form {
+        width: 300px;
+        padding: 10px;
+    }
 }

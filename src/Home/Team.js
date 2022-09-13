@@ -11,15 +11,15 @@ import muzan from "../images/muzan.jpg"
 import Abdelnaser from "../images/Abdelnaser.jpg"
 
 let members = [
-    { name : "Yassir Omer", position : "Founder/President", linkedIn : "", image : maxab },
-    { name : "Rayan Abdelfatah", position : "Co-founder/Executive Director", linkedIn : "", image : rayan  },
-    { name : "Muzun Tajelsir", position : "Co_founder", linkedIn : "", image : muzan  },
-    { name : "Shima Ahmed", position : "Director of International Relations", linkedIn : "", image : shima  },
-    { name : "Shehabeldin Osman", position : "Director of Programs", linkedIn : "", image : shihab  },
-    { name : "Noel Janna", position : "Director of Social Media platforms", linkedIn : "", image : noel  },
-    { name : "Abdoalnaser Ibrahim", position : "Director of Innovation", linkedIn : "", image : Abdelnaser  },
-    { name : "Ahmed Alkhatim Awad", position : "Web Developer", linkedIn : "", image : alkhatim  },
-    { name : "Saadia Mohamed Ahmed", position : "Graphic Designer", linkedIn : "", image : sadia  },
+    { name : "Yassir Omer", position : "Founder/President", image : maxab, linkedIn : "https://www.linkedin.com/in/yasser-omer-5a117a18a" },
+    { name : "Rayan Abdelfatah", position : "Co-founder/Executive Director", image : rayan, linkedIn : "https://www.linkedin.com/in/rayan-ahmed-6581b4104"},
+    { name : "Muzun Tajelsir", position : "Co_founder",image : muzan, linkedIn : "https://www.linkedin.com/in/muzun-tajelsir-00570b235"   },
+    { name : "Shima Ahmed", position : "Director of International Relations", image : shima, linkedIn : "https://www.linkedin.com/in/shima-ahmed-8740881b2" },
+    { name : "Shehabeldin Osman", position : "Director of Programs",  image : shihab, linkedIn : "https://www.linkedin.com/in/shihab-eldin-osman-0b329050"},
+    { name : "Noel Janna", position : "Director of Social Media platforms", image : noel, linkedIn : "https://www.linkedin.com/in/noeljanna"   },
+    { name : "Abdoalnaser Ibrahim", position : "Director of Innovation",  image : Abdelnaser, linkedIn : "http://linkedin.com/in/abdoalnaser-ibrahim-5a8b37111"},
+    { name : "Ahmed Alkhatim Awad", position : "Web Developer", image : alkhatim , linkedIn : "https://www.linkedin.com/in/ahmed-alkhatim/" },
+    { name : "Saadia Mohamed Ahmed", position : "Graphic Designer",  image : sadia, linkedIn : "https://www.linkedin.com/in/saadia-mohamed-ahmed-0b7052200"},
 ]
 const Team = () => {
     return(
@@ -42,7 +42,7 @@ const ListOfMembers = ( { member } ) => {
             </div>
             <h6>{ member.name } </h6>
             <p>{ member.position } </p>
-            <img className="linkedin" src={ linkidIn }  alt="linkedin" />
+            <a href = {member.linkedIn     }><img className="linkedin" src={ linkidIn }  alt="linkedin" /></a>
         </div>
     )
 }

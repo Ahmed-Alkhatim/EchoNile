@@ -7,8 +7,8 @@ import twitter from "../images/icons/twitterGreen.svg"
 const Intro = () => {
     return(
         <div className="intro">
+            <Header theme = {"navigator-light"}/>
             <Container>
-                <Header theme = {"navigator-light"}/>
                 <h1><span>Together For </span> Environmentally Sustainable Future</h1>
                 <div className="intro-contact">
                     <div className="intro-mask">
