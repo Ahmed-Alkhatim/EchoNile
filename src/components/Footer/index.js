@@ -29,7 +29,7 @@ const Header = () => {
 const About = () => {
     return(
         <div className="about-footer">
-            <h6>About</h6>
+            <h6>Home</h6>
             <ul>
                 <li>About</li>
                 <li>Our Team</li>
@@ -43,7 +43,7 @@ const About = () => {
 const Services = () => {
     return(
         <div className="about-services">
-            <h6>About</h6>
+            <h6>Services</h6>
             <ul>
                 <li>Sessions</li>
                 <li>Courses</li>

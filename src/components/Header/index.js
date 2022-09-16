@@ -30,7 +30,7 @@ function Header( { theme }) {
             <Container>
             <div className={"navigator " + theme}>
                 <div>
-                    <span className={"logo-header"}>Eco<span>Nile.</span></span>
+                    <span className={"logo-header"}>Eco<span>Nile</span></span>
                 </div>
                 <div className="navigator-item" onClick = { () => { setIcon(!dropIcon) }}>
                     <span className={"first-one " + (dropIcon && "rotateLine1") } ></span>

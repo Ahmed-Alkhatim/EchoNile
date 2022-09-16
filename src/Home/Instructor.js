@@ -6,7 +6,7 @@ function Instructor() {
         <div className="instructor">
             <img src= {mask1} alt = "tree"/>
             <Link to = "instructor">
-                <h3>Become Instructor</h3>
+                <h3>Become an Instructor</h3>
             </Link>
             <img src= {mask2} alt = "tree"/>
 

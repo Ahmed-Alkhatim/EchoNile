@@ -9,7 +9,7 @@ const Intro = () => {
         <div className="intro">
             <Header theme = {"navigator-light"}/>
             <Container>
-                <h1><span>Together For </span> Environmentally Sustainable Future</h1>
+                <h1>Together For Environmentally Sustainable Future</h1>
                 <div className="intro-contact">
                     <div className="intro-mask">
                         <img src={linkidin} alt = "linkidin"/>
@@ -17,7 +17,7 @@ const Intro = () => {
                         <img src={twitter} alt = "twitter"/>
                         <img src={faceBook} alt = "faceBook"/>
                     </div>
-                    <div className="introContact-header"><Link to = "instructor">become an instructor</Link></div>
+                    <div className="introContact-header"><Link to = "instructor">Become an Instructor</Link></div>
                 </div>
             </Container>
         </div>

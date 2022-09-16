@@ -6,7 +6,7 @@ function Vision() {
             <div className="we">
                 <div className = "vision">
                     <h6>Vision</h6>
-                    <p>We dream of an environmentally aware youth inspired to become change agents towards a sustainable futur</p>
+                    <p>We dream of an environmentally aware youth inspired to become change agents towards a sustainable future</p>
                 </div>
                 <div className = "vision">
                     <h6>Mission</h6>

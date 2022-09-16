@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import image from  "../images/shop.jpg";
 
 const Blog = ({ data }) => (
+    <Link to = {"/blog/" + data.id}>
     <div className="main-card ">
         <div className="img-container">
-            <img src={ image } alt="" />
+            <img src={ data.image } alt="" />
         </div>
         <div className = "card-description">
             <div>
@@ -25,12 +27,15 @@ const Blog = ({ data }) => (
             </div>
         </div>
     </div>
+    </Link>
 )
 const OtherBlog = ({ blog }) => {
     return(
+    <Link to = {"/blog/" + blog.id}>
+
         <div className="card">
             <div className="img-container">
-                <img src={ image } alt="" />
+                <img src={ blog.image } alt="" />
             </div>
             <div className = "card-description">
                 <div>
@@ -50,6 +55,7 @@ const OtherBlog = ({ blog }) => {
                 </div>
             </div>
         </div>
+        </Link>
     )
 }
 

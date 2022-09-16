@@ -123,6 +123,10 @@ ul li  {
     }
 }
 @media screen and (max-width : 600px){
+    .page {
+        padding-top: 100px;
+        padding-bottom: 50px;
+      }
     .page-header {
         margin-bottom: 40px;
     }

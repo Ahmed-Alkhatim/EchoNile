@@ -1,13 +1,15 @@
 import { Header, Footer, Container } from "../components"
 import { Blog, OtherBlog, OtherBlogs } from "./component"
 import member from "../images/user.png"
+import blog1 from "../images/otherblog.jpg"
+import blog2 from "../images/drblog.jpg"
 import dr from "../images/dr.jpg"
 import "./blog.css";
 import image from  "../images/shop.jpg";
 import { useParams } from "react-router-dom";
 
 const blogssData = [
-    {title : "Responding to Climate Change in Sudan", discription : `Responding to the challenge of climate change is a national priority for Sudan. Impact of
+    {id : 1, title : "Responding to Climate Change in Sudan", image : blog2, discription : `Responding to the challenge of climate change is a national priority for Sudan. Impact of
     climate change is already affecting rural communities, natural resources, agricultural
     productivity and coastal infrastructure. `,  memberName : "Dr. Ismail Elgizouli", 
     content : [
@@ -98,9 +100,9 @@ const blogssData = [
         benefit the local community and to generate long-term and transformative impacts. This will
         help build trust and confidence and breakdown any unintended ‘silo’ mentality between the
         public and private sector`]
-    }], memberImage : dr , memberPosition : "Member", date : "March  2022"},
+    }], memberImage : dr , memberPosition : "ismail.elgizouli@gmail.com", date : "March  2022"},
 
-    {title : "Climate Change Causes", discription : `The atmosphere contains 78% of nitrogen, 20% oxygen, and
+    {id : 2, title : "Climate Change Causes", image : blog1, discription : `The atmosphere contains 78% of nitrogen, 20% oxygen, and
     less than 2% of greenhouse gases. The Greenhouse gases
     contain 97% of water vapor, 1.45% of volcanic activity,
     1.45%of ocean biological activity and 0.10% of human
@@ -147,7 +149,7 @@ const blogssData = [
         planting of crops that bear heat stress and water shortage changing of
         agricultural practices.`]
         }
-    ], memberName : "Rehab Ahmed Hassan", memberImage : member , memberPosition : "Co-Founder"},
+    ], memberName : "Rehab Ahmed Hassan", memberImage : member , memberPosition : "rehabkhatimi@gmail.com"},
 ]
 
 const Blogs = () => {
@@ -175,7 +177,7 @@ const BlogView = () => {
             <Header theme={"navigator-dark"}/>
             <Container>
                 <div className="img-container ">
-                    <img src={ image } alt="course" />
+                    <img src={ blog.image } alt="course" />
                 </div>
                 <div className="writer">
                     <div className = "img-container">
